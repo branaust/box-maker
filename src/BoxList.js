@@ -20,6 +20,12 @@ class BoxList extends Component {
         }))
     }
 
+    removeItem = (id) => {
+        this.setState({
+            items: this.state.items.filter(item => item.id !== id)
+        })
+    }
+
     renderItems = () => {
         return (
             <ul className="Boxes">
@@ -29,6 +35,9 @@ class BoxList extends Component {
                             backgroundColor={item.backgroundColor}
                             height={item.height}
                             width={item.width}
+                            key={item.id}
+                            id={item.id}
+                            removeBox={() => this.removeItem(item.id)}
                         />
                     </li>
                 ))}
