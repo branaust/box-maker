@@ -1,0 +1,18 @@
+.NewBoxForm {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    align-self: center;
+    margin-top: 10px;
+    
+}
+
+#height{
+    margin-bottom: 15px;
+}
+#width{
+    margin-bottom: 15px;
+}
+#backgroundColor{
+    margin-bottom: 15px;
+}

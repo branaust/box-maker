@@ -1,0 +1,14 @@
+.BoxList{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Boxes{
+    list-style: none;
+    align-self: center;
+}
+
+.Box{
+    margin-bottom: 20px;
+}
